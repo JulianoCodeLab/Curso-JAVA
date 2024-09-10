@@ -13,7 +13,7 @@ public class exercicio2 {
 
         //recebendo a quantidade de minutos
         int minutos;
-
+        double valor;
         System.out.println("Quantos minutos?");
         minutos = sc.nextInt();
 
@@ -21,11 +21,12 @@ public class exercicio2 {
 
         //criando condicional
         if (minutos <= 100){
-            System.out.println("O valor a ser pago é de $50.00");
+            valor = 50;
+            System.out.printf("O valor a ser pago é de $ %.2f", valor);
 
         }else {
-            minutos = ((minutos - 100) * 2) + 100;
-            System.out.printf("O valor a ser pago é de $ %.2f", minutos);
+            valor = ((minutos - 100) * 2) + 50;
+            System.out.printf("O valor a ser pago é de $ %.2f", valor);
         }
         sc.close();
     }

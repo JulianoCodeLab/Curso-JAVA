@@ -11,17 +11,17 @@ public class Product {
         return price * quantity;
     }
 
-    //metodo para add produto
+    //metodo para add produto do estoque
     public void addProducts(int quantity) {
         this.quantity += quantity;
     }
 
-    //metodo para remover produto
+    //metodo para remover produto do estoque
     public void removeProducts(int quantity) {
         this.quantity -= quantity;
     }
 
-    //mensagem final
+    //mensagem final com os valores modificados
     public String toString() {
         return name
                 + ", $ "

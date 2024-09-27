@@ -6,6 +6,7 @@ import entities.Product;
 
 
 public class Program {
+    
     public static void main(String[] args) {
         //definindo contador americando
         Locale.setDefault(Locale.US);
@@ -42,7 +43,6 @@ public class Program {
 
         //pulando linha
         System.out.println();
-
 
         System.out.println("Updated data: " + product);
         System.out.println();

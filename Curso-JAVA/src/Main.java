@@ -61,6 +61,7 @@ public class Main {
         int y;
         double z;
 
+
         x = sc.next();
         y = sc.nextInt();
         z = sc.nextDouble();
@@ -80,7 +81,7 @@ public class Main {
         s2 = sc.nextLine();
         s3 = sc.nextLine();
 
-        System.out.println("Dados digitados: ");
+        System.out.println("Os dados digitados: ");
         System.out.println(s1);
         System.out.println(s2);
         System.out.println(s3);

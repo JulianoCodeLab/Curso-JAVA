@@ -3,7 +3,7 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 import entities.Product;
-
+//Obrigando o usuario a dar valores aos atributos
 
 public class Program {
 
@@ -14,20 +14,22 @@ public class Program {
         //instanciando um novo scanner
         Scanner sc = new Scanner(System.in);
 
-        //instanciando um novo objeto da classe product
-        Product product = new Product();
 
         System.out.println("Enter product data: ");
 
         //criando um novo item no estoque com nome preço e quantidade
         System.out.print("Name: ");
-        product.name = sc.nextLine();
+        String name = sc.nextLine();
 
         System.out.print("Price: ");
-        product.price = sc.nextDouble();
+        double price = sc.nextDouble();
 
         System.out.print("Quantity in stock: ");
-        product.quantity = sc.nextInt();
+        int quantity = sc.nextInt();
+
+
+        //criando objeto ja com os valores atribuidos a ele
+        Product product = new Product(name, price, quantity);
 
         //pulando linha
         System.out.println();
@@ -38,7 +40,7 @@ public class Program {
 
         // adicionando mais unidades do produto no estoque
         System.out.print("Enter the number of products to be added in stock: ");
-        int quantity = sc.nextInt();
+        quantity = sc.nextInt();
         product.addProducts(quantity);
 
         //pulando linha

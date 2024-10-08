@@ -1,10 +1,20 @@
 package entities;
 
+
 public class Product {
 
     public String name;
     public double price;
     public int quantity;
+
+    //-----------Obrigando o usuario a dar valores aos atributos=> construtor
+    public Product(String name, double price, int quantity ){
+
+        //referencia para o proprio objeto "this."
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+    }
 
     //metodo que me da o valor total dos produtos em estoque
     public double totalValueInStock() {

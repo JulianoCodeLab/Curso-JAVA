@@ -3,8 +3,9 @@ package application;
 import java.util.Locale;
 import java.util.Scanner;
 import entities.Product;
-//Obrigando o usuario a dar valores aos atributos
 
+
+//Obrigando o usuario a dar valores aos atributos
 public class Program {
 
     public static void main(String[] args) {

@@ -33,6 +33,8 @@ public class Program {
         //criando objeto ja com os valores atribuidos a ele
         Product product = new Product(name, price);
 
+        product.setName("Computer");
+
         //pulando linha
         System.out.println();
         System.out.println("Product data: " + product);

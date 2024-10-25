@@ -3,10 +3,11 @@ package entities;
 
 public class Product {
 
-    public String name;
-    public double price;
-    public int quantity;
+    private String name;
+    private double price;
+    private int quantity;
 
+    
     public Product(){
 
 
@@ -21,6 +22,8 @@ public class Product {
         this.quantity = quantity;
     }
 
+
+
     //Sobrecarga -> criar mais de um objeto igual, com a diferença de lista de parametros.
     public Product(String name, double price){
 
@@ -28,6 +31,11 @@ public class Product {
         this.name = name;
         this.price = price;
 
+    }
+
+
+    public void setName(String name){
+        this.name = name;
     }
 
     //metodo que me da o valor total dos produtos em estoque

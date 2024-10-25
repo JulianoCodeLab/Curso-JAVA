@@ -15,6 +15,8 @@ public class Program {
         //instanciando um novo scanner
         Scanner sc = new Scanner(System.in);
 
+        Product p = new Product();
+
 
         System.out.println("Enter product data: ");
 
@@ -25,12 +27,11 @@ public class Program {
         System.out.print("Price: ");
         double price = sc.nextDouble();
 
-        System.out.print("Quantity in stock: ");
-        int quantity = sc.nextInt();
-
+        //System.out.print("Quantity in stock: ");
+        //int quantity = sc.nextInt();
 
         //criando objeto ja com os valores atribuidos a ele
-        Product product = new Product(name, price, quantity);
+        Product product = new Product(name, price);
 
         //pulando linha
         System.out.println();
@@ -41,7 +42,7 @@ public class Program {
 
         // adicionando mais unidades do produto no estoque
         System.out.print("Enter the number of products to be added in stock: ");
-        quantity = sc.nextInt();
+        int quantity = sc.nextInt();
         product.addProducts(quantity);
 
         //pulando linha
@@ -52,7 +53,7 @@ public class Program {
 
         //opção de remover quantidades de produto do estoque
         System.out.print("Enter the number of products to be removed from stock: ");
-        quantity = sc.nextInt();
+         quantity = sc.nextInt();
         product.removeProducts(quantity);
 
         //pulando linha

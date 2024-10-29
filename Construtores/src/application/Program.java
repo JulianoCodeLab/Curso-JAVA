@@ -34,6 +34,10 @@ public class Program {
         Product product = new Product(name, price);
 
         product.setName("Computer");
+        System.out.println("Update name: " + product.getName());
+
+        product.setPrice(1200.00);
+        System.out.println("Upadate price: " + product.getPrice());
 
         //pulando linha
         System.out.println();
